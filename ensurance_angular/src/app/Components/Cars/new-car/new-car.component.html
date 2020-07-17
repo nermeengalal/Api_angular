@@ -1,0 +1,18 @@
+<br><br><br>
+<form #frm="ngForm" (ngSubmit)="AddCar()">
+    <div class="container">
+        <div class="form-group">
+            <label for="pname"  class="text-danger">Model :</label>
+            <input type="text" class="form-control"   #carmodel="ngModel" [class.is-invalid]="carmodel.invalid" [class.is-valid]="carmodel.valid" id="model" [(ngModel)]="Car.model" required   placeholder="Enter Car model" name="model">
+          </div>
+
+          <div class="form-group">
+            <label for="cmp" class="text-danger">Year :</label>
+            <input type="text" class="form-control"   #caryear="ngModel" [class.is-invalid]="caryear.invalid" [class.is-valid]="caryear.valid" id="year" [(ngModel)]="Car.year" required placeholder="Enter Car year" name="year">
+          </div>
+         
+      
+          <button type="submit" [disabled]="frm.invalid" class="btn btn-success">Save</button>
+    </div>
+   
+</form>

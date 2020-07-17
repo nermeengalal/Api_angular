@@ -1,0 +1,12 @@
+<br><br><br>
+<form #frm="ngForm" (ngSubmit)="UpdateClient()">
+    <div class="container">
+        <div class="form-group">
+            <label for="cmp" class="text-danger">Address :</label>
+            <input type="text" class="form-control"   #clientAddress="ngModel" [class.is-invalid]="clientAddress.invalid" [class.is-valid]="clientAddress.valid" id="cmp" [(ngModel)]="client.address" required placeholder="Enter Client Address" name="address">
+        </div>
+        <button type="submit" [disabled]="frm.invalid" class="btn btn-success">Save</button>
+    </div>
+</form>
+
+

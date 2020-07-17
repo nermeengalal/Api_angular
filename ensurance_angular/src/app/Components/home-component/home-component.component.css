@@ -1,0 +1,36 @@
+.head
+{
+    text-align: center;
+    color: #fff;
+   
+}
+
+.intro 
+{
+   
+    padding-top: 15%;
+    color: black;  
+}
+.intro img
+{
+    width: 100%;
+
+}
+.intro h2
+{
+    font-size: 60px;
+    font-family: Brush Script MT;
+}
+.intro h1
+{
+    font-size: 70px;
+    font-family: Arial Black;
+}
+.intro a
+{
+    color: white;
+}
+.SERVICES
+{
+    background-color: antiquewhite;
+}

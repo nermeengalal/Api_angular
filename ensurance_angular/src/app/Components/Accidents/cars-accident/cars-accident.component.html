@@ -1,0 +1,36 @@
+<br><br><br>
+<div style="text-align: center;">
+    <button class="btn btn-secondary" [routerLink]="['/NewAccident',ownerid]" ><i class="fas fa-plus"  style="color: white;"></i> New Accident</button> 
+</div>
+
+<br><br>
+<div class="cart-main-wrapper" style="background-color: #faf4f4;">
+    <div class="container">
+        <div class="row" >
+            <div class="col-lg-12">
+                <!-- Cart Table Area -->
+                <div class="cart-table table-responsive">
+                    <table class="table table-stripped">
+                        <thead>
+                            <tr>
+                                <th class="pro-name">Location</th>
+                                <th class="pro-address">Date of Accident</th> 
+                                <th class="pro-address">Damage Amount</th>  
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of Accidents">
+                                <td class="pro-name"><span>{{item.location}}</span></td>
+                                <td class="pro-address"><span>{{item.date}}</span></td>  
+                                <td class="pro-address"><span>{{item.DamageAmountPrice}}</span></td>      
+                            </tr>
+                        </tbody>
+                    </table>
+               </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+
